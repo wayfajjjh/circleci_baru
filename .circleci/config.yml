@@ -27,7 +27,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: composer install -n --prefer-dist
+      - run: composer create-project phpunit/phpunit:6.5.2  --prefer-dist
 
       - save_cache:
           paths:
